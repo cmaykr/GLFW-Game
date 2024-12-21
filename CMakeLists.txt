@@ -9,6 +9,9 @@ include_directories(include)
 include_directories(common)
 
 set(SRC_COMMON common/GL_utilities.c common/LoadTGA.c)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/lib)
+set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR}/bin)
 
 add_executable(Test ${SRC_COMMON} src/main.cpp src/glad.c)
 target_link_libraries(Test glfw)

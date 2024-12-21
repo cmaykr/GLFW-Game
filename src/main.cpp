@@ -8,6 +8,7 @@
 #include <stdlib.h>
 #include <stddef.h>
 #include <stdio.h>
+#include "GL_utilities.h"
  
 typedef struct Vertex
 {
