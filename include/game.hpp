@@ -7,8 +7,11 @@ class Game
 {
 public:
     Game();
+    ~Game();
+    
+    int init();
     void start();
 private:
-    int init();
+    bool isInitialized {false};
     GLFWwindow *window;
 };

@@ -1,8 +1,13 @@
 #include "game.hpp"
 
+#include <cstdio>
+
 int main(void)
 {
-    Game game{};
+    printf("Test");
+    Game game = Game();
+
+    game.init();
 
     game.start();
 }   
